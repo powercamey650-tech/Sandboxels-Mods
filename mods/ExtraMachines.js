@@ -1720,7 +1720,7 @@ elements.Missile_Up = {
             if(isEmpty(pixel.x,pixel.y-1) ) {
                 let exguast = createPixel("fire",pixel.x,pixel.y + 3)
                 tryMove(pixel,pixel.x,pixel.y-2,);
-            } else if(!isEmpty(pixel.x, pixel.y-1)) {
+            } else if(!isEmpty(pixel.x, pixel.y-1, true)) {
                 
                 explodeAt(pixel.x,pixel.y, 13 ,["fire","plasma","plasma","plasma"]); 
                     deletePixel(pixel.x,pixel.y)
@@ -1759,7 +1759,7 @@ elements.Missile_Up = {
                         if(isEmpty(pixel.x,pixel.y+2) ) {
                             let exguast = createPixel("fire",pixel.x,pixel.y - 3)
                             tryMove(pixel,pixel.x,pixel.y+2,);
-                        } else if(!isEmpty(pixel.x, pixel.y+1)) {
+                        } else if(!isEmpty(pixel.x, pixel.y+1, true)) {
                             
                             explodeAt(pixel.x,pixel.y, 13 ,["fire","plasma","plasma","plasma"]); 
                                 deletePixel(pixel.x,pixel.y)
@@ -2169,7 +2169,7 @@ elements.Missile_Up = {
                         pixel.placed = true;
                     }
                     if(pixel.chargeCD) {
-                        if (!isEmpty(pixel.SelX,pixel.SelY)) {
+                        if (!isEmpty(pixel.SelX,pixel.SelY,true)) {
                             var sensed = pixelMap[pixel.SelX][pixel.SelY];
                             if(!sensed) {return} 
                             if (!sensed.chargeCD && !sensed.charge) sensed.charge = 1;

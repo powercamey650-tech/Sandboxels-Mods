@@ -1,4 +1,15 @@
 // Bismuth is the best element
+/*
+X e-void
+X anti-filter
+X anti-smart void
+X heat conducting wall
+X aerogel (?)
+X rename global heat conductor to heat portal, add channels
+X instant wire
+X heat pipe, smart variant
+X rename specific machines to smart machines
+*/
 async function _nousersthingsprompt(message, defaultValue = "") { // thanks to ggod for updated prompt function
     return new Promise(resolve => {
         promptInput(message, (result) => {

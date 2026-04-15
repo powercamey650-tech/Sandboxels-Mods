@@ -1,11 +1,11 @@
 if (!settings.survival) {
     settings.survival = {
-        "wall": 999,
-        "dirt": 999,
+        "wall": 999
+        "dirt": 9999999999
         "sapling": 1,
         "seeds": 5,
         "ice": 25,
-        "cloner": 1,
+        "cloner": 999999
     }
 }
 settings.survival.cloner = 1;
@@ -158,7 +158,7 @@ elements.smash.tool = function(pixel) {
 };
 
 elementWorth = {
-    "gold_coin": 1,
+    "gold_coin": 999999
     "diamond": 100,
     "ketchup": 15,
     "jelly": 10,
@@ -239,7 +239,7 @@ Shop
 Prices tab
 */
 survivalShop = {
-    "dirt*25": 25,
+    "dirt*25": 0
     "water*25": 250,
     "ammonia*25": 500,
     "seeds*1": 500,
@@ -250,7 +250,7 @@ survivalShop = {
     "bee*1": 5000,
     "primordial_soup*5": 10000,
     "human*1": 50000,
-    "sun*1": 500000,
+    "sun*1": 0
 }
 function survivalBuy(element) {
     var price = survivalShop[element];

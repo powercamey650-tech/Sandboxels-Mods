@@ -1,7 +1,7 @@
 if (!settings.survival) {
     settings.survival = {
         "wall": 999,
-        "dirt": 999,
+        "dirt": 999999999,
         "sapling": 1,
         "seeds": 5,
         "ice": 25,
@@ -180,7 +180,7 @@ elementWorth = {
     "flour": 2,
     "lettuce": 2,
     "sauce": 2,
-    "wood": 0.2,
+    "wood": 9999999999,
     "tree_branch": 0.1,
     "plant": 0.1,
     "mushroom_cap": 0.1,
@@ -250,7 +250,7 @@ survivalShop = {
     "bee*1": 5000,
     "primordial_soup*5": 10000,
     "human*1": 50000,
-    "sun*1": 500000,
+    "sun*1": 0,
 }
 function survivalBuy(element) {
     var price = survivalShop[element];
